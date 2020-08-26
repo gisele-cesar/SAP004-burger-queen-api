@@ -11,14 +11,11 @@ module.exports = {
       active: {
         type: Sequelize.BOOLEAN
       },
-      table: {
-        type: Sequelize.INTEGER
-      },
-      client: {
+      client_name: {
         type: Sequelize.STRING
       },
-      item: {
-        type: Sequelize.STRING
+      table_number: {
+        type: Sequelize.DECIMAL(10,2)
       },
       createdAt: {
         allowNull: false,

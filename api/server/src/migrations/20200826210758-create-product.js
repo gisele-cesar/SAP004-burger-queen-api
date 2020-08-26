@@ -8,11 +8,17 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      name: {
+      name_item: {
         type: Sequelize.STRING
       },
       price: {
         type: Sequelize.DECIMAL(10,2)
+      },
+      is_burger: {
+        type: Sequelize.BOOLEAN
+      },
+      has_extra: {
+        type: Sequelize.BOOLEAN
       },
       createdAt: {
         allowNull: false,
