@@ -2,9 +2,11 @@ import { Router } from 'express'
 import OrderController from '../controllers/OrderController'
 
 const router = Router()
-router.get('/', OrderController.getAllOrders)
-router.post('/', OrderController.getAllOrders)
-router.get('/:id', OrderController.getAllOrders)
-router.put('/:id', OrderController.getAllOrders)
-router.delete('/:id', OrderController.getAllOrders)
+router.get('/', OrderController.all)
+router.post('/', OrderController.add)
+router.get('/:id', OrderController.getById)
+router.put('/:id', OrderController.all)
+router.delete('/:id', OrderController.all)
+router.get('/:id/items', OrderController.getItemsById)
+router.post('/:id/items', OrderController.createItem)
 export default router

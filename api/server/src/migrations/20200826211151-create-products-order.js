@@ -18,16 +18,10 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: {model:'Orders', key:'id'}
       },
-      active: {
-        type: Sequelize.BOOLEAN
+      qtde: {
+        type: Sequelize.INTEGER
       },
-      add_egg: {
-        type: Sequelize.BOOLEAN
-      },
-      add_cheese: {
-        type: Sequelize.BOOLEAN
-      },
-      status_order: {
+      obs: {
         type: Sequelize.STRING
       },
       createdAt: {
